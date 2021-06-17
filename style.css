@@ -1,0 +1,522 @@
+/*
+Theme Name: Shudra
+Theme URI: https://wpkoi.com/shudra-wpkoi-wordpress-theme/
+Template: lalita
+Author: wpkoithemes
+Author URI: https://wpkoi.com
+Description: Shudra is a child theme for Lalita WPKoi theme. You can find theme demos at wpkoi.com. Shudra has a red and dark, glitchy style and design for portfolio, business or agency content. The theme is multipurpose, so if You like the style, You can use it to represent Your art, business, an event, show Your portfolio, start a blog, start a webshop and sell Your products etc. The demos use Elementor, WooCommerce and Contact Form 7 plugins. The premium demo uses the Shudra premium plugin also. Shudra has an easy to use admin with a lot of customizer functions, so You can build Your dream without coding knowledge. The theme is responsive so looks good on almost every devices. You can setup multiple header styles, navigation styles and layouts. Build You site with Shudra Theme and share it with the world! You can also find a documentation with an install guide and a tutorial for the screenshot look on wpkoi.com/docs.
+Version: 1.0.0
+Tested up to: 5.7.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shudra
+Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, footer-widgets, blog, e-commerce, flexible-header, full-width-template, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images
+
+*/
+
+body {
+  background-color: #111111;
+}
+
+.shudra-scrollbar-style::-webkit-scrollbar {
+  width: 12px;
+}
+
+.shudra-scrollbar-style::-webkit-scrollbar-track {
+  background: #333333;
+  border-radius: 0px;
+}
+
+.shudra-scrollbar-style::-webkit-scrollbar-thumb {
+  background: #fe422e;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.shudra-scrollbar-style::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.inside-top-bar {
+  padding: 5px 50px;
+}
+
+.top-bar {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.inside-header {
+  padding: 5px 50px 0;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 55px;
+}
+
+.shudra-nav-effect .main-navigation .main-nav ul {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.shudra-nav-effect .main-navigation .main-nav ul li {
+  display: inline-block;
+  list-style: outside none none;
+}
+.shudra-nav-effect .main-navigation .main-nav ul a {
+  display: inline-block;
+  position: relative;
+}
+.shudra-nav-effect .main-navigation .main-nav ul li a:before {
+  left: 20%;
+  right: 20%;
+  top: 50%;
+  content: "";
+  border-left: 12px solid #fbb533;
+  border-right: 12px solid #fbb533;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 5px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.shudra-nav-effect .main-navigation .main-nav ul li a:hover,
+.shudra-nav-effect .main-navigation .main-nav ul li.current-menu-item a {
+}
+.shudra-nav-effect .main-navigation .main-nav ul a:hover:before,
+.shudra-nav-effect .main-navigation .main-nav ul li.current-menu-item a:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.shudra-nav-effect .main-navigation .main-nav ul li .dropdown-menu-toggle {
+  display: none;
+}
+.shudra-nav-effect .main-navigation .main-nav ul li.menu-item-has-children > a {
+  padding-right: 12px;
+}
+
+.shudra-nav-effect .main-navigation .main-nav ul ul li a:before,
+.shudra-nav-effect
+  .main-navigation
+  .main-nav
+  ul
+  li.wpkoi-nav-btn-h
+  a:hover:before {
+  content: initial;
+}
+
+.main-navigation a {
+  font-weight: 700;
+  text-transform: none;
+  font-size: 25px;
+}
+
+.main-navigation .main-nav ul li a,
+.main-navigation .mobile-bar-items a,
+.menu-toggle {
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 70px;
+}
+
+.menu-item-has-children .dropdown-menu-toggle {
+  padding-left: 12px;
+}
+
+button.menu-toggle:hover,
+button.menu-toggle:focus {
+  background-color: inherit;
+}
+
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item
+  a:focus::after,
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item
+  a:focus::before,
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item
+  a:hover::after,
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item
+  a:hover::before,
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item.current-menu-item
+  a::after,
+.navigation-effect-stylea
+  #site-navigation
+  .main-nav
+  ul
+  li.menu-item.current-menu-item
+  a::before {
+  font-weight: 700;
+}
+
+.button,
+.woocommerce a.button,
+.woocommerce button.button {
+  padding: 12px 25px;
+}
+
+.button,
+.button:visited,
+button:not(.menu-toggle),
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.woocommerce a.button {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.button:visited,
+header .main-navigation .main-nav ul li a.wpkoi-nav-btn {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.button:focus,
+header .main-navigation .main-nav ul li a.wpkoi-nav-btn {
+  transform: scale(1.1);
+}
+
+.shudra-button .button,
+.shudra-button .button:visited,
+.shudra-button button:not(.menu-toggle),
+html .shudra-button input[type="button"],
+.shudra-button input[type="reset"],
+.shudra-button input[type="submit"],
+.woocommerce.shudra-button a.button,
+.shudra-button .page-header-blog-content a.button {
+  color: #fe422e;
+  background-color: #00000022;
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  border-color: #fe422e;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 10px 3px #fe422e;
+}
+.shudra-button .button:hover,
+html .shudra-button input[type="button"]:hover,
+.shudra-button input[type="reset"]:hover,
+.shudra-button input[type="submit"]:hover,
+.woocommerce.shudra-button a.button:hover,
+.shudra-button .page-header-blog-content a.button:hover {
+  color: #ffffff;
+  background-color: #fe422e;
+  transform: skew(-10deg);
+}
+
+body:not(.mobile-header-logo) #mobile-header .menu-toggle {
+  transform: none !important;
+}
+
+.site-info {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 50px;
+}
+
+.lalita-back-to-top,
+.lalita-back-to-top:visited {
+  border-radius: 50px;
+  right: 10px;
+}
+
+.lalita-side-left-content {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 250px 0px 0px 0px;
+}
+
+.lalita-side-left-content .lalita-side-left-socials ul {
+  padding: 15px 4px;
+}
+
+.lalita-side-left-content .lalita-side-left-text {
+  padding: 4px 15px;
+}
+
+.page-header-blog-content-h,
+.page-header-blog-content-b {
+  display: inline-block;
+  padding: 0;
+  height: auto;
+  vertical-align: middle;
+}
+
+.page-header-blog-content-h {
+  width: 65%;
+}
+
+.page-header-blog-content.page-header-blog-content-b {
+  width: 32%;
+}
+
+.page-header-blog-content-h .page-header-blog-content {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.page-header-blog-text,
+.page-header-blog-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.page-header-blog-content h2 {
+  font-size: 105px;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 5%;
+}
+
+.page-header-blog-content h2 {
+  margin-left: 30px;
+}
+
+.page-header-blog-text p {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.page-header-blog-button a.button {
+  border-radius: 0;
+  margin-bottom: 10px;
+  text-transform: none;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.page-header-blog {
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-header-noiseoverlay {
+  background-image: url("img/shudra-bg.gif");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.page-header-blog-inner {
+  max-width: 1300px;
+  margin: auto;
+  padding: 5% 0;
+  z-index: 2;
+}
+
+.site-footer .footer-widgets-container .inner-padding {
+  padding: 0 0 20px 40px;
+}
+
+.footer-widgets {
+  padding: 50px;
+}
+
+.widget-title {
+  font-weight: 900;
+}
+
+.footer-bar .lalita-social-bar {
+  float: right;
+}
+
+.footer-bar .lalita-socials-list li {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.elementor-page .screen-reader-text {
+  top: inherit;
+}
+
+.post-type-archive-product.post-image-above-header.woocommerce-page
+  .post-image {
+  display: none;
+}
+
+.shudra-img-effect-holder {
+  position: relative;
+}
+
+.shudra-img-effect-holder img {
+  display: block;
+}
+
+.shudra-img-effect-holder .shudra-img-effect-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-image: url("img/glitch.gif");
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  mix-blend-mode: screen;
+}
+
+.shudra-img-effect-holder:hover .shudra-img-effect-layer {
+  opacity: 1;
+}
+
+.entry-summary a,
+.entry-content a,
+.comment-content a,
+.textwidget a {
+  text-decoration: underline;
+}
+
+body .grid-container {
+  max-width: 1250px;
+}
+
+@media (max-width: 1200px) {
+  .page-header-blog-content-h .page-header-blog-content {
+    padding: 0;
+  }
+
+  .page-header-blog-content h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-header-blog-content-h h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header-blog-content-h,
+  .page-header-blog-content.page-header-blog-content-b {
+    display: block;
+    width: 100%;
+  }
+
+  .page-header-blog img {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 5%;
+  }
+
+  .page-header-blog-content-h h2 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .page-header-blog-content-h p {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .page-header-blog-content-h .page-header-blog-content,
+  .page-header-blog-image {
+    width: initial;
+    margin: 0;
+  }
+
+  .page-header-blog-content a.button {
+    margin-left: 30px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .lalita-side-left-cover,
+  .lalita-side-right-cover {
+    width: 0;
+  }
+
+  .footer-bar .widget,
+  .footer-bar .lalita-social-bar {
+    float: none;
+    margin: 0 10px;
+  }
+
+  button:hover,
+  html input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  a.button:hover,
+  button:focus,
+  html input[type="button"]:focus,
+  input[type="reset"]:focus,
+  input[type="submit"]:focus,
+  a.button:focus,
+  header .main-navigation .main-nav ul li a.wpkoi-nav-btn {
+    transform: scale(1);
+  }
+
+  .shudra-nav-effect .main-navigation .main-nav ul li a:before {
+    content: initial;
+  }
+  .elementor-page #page::-webkit-scrollbar,
+  .elementor-template-canvas .elementor-inner::-webkit-scrollbar,
+  .elementor-template-canvas .elementor-section-wrap::-webkit-scrollbar {
+    display: none;
+  }
+}

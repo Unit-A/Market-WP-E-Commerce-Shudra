@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-13 09:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:120
+msgid "Shudra Effects"
+msgstr ""
+
+#: functions.php:141
+msgid "Shudra navigation effect"
+msgstr ""
+
+#: functions.php:143 functions.php:168 functions.php:193 functions.php:218
+#: functions.php:243
+msgid "Enable"
+msgstr ""
+
+#: functions.php:144 functions.php:169 functions.php:194 functions.php:219
+#: functions.php:244
+msgid "Disable"
+msgstr ""
+
+#: functions.php:166
+msgid "Blog image effect"
+msgstr ""
+
+#: functions.php:191
+msgid "Scrollbar style"
+msgstr ""
+
+#: functions.php:216
+msgid "Cursor image"
+msgstr ""
+
+#: functions.php:241
+msgid "Shudra button"
+msgstr ""
